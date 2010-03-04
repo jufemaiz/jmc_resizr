@@ -107,7 +107,7 @@
 
 	    return this.each(function() { 
 			// Check that it is an image
-			if (this.tagName.toLowerCase() == 'img') {
+			if (this.nodeName === 'IMG') {
 				// Undertake check load state
 				$(this).load(function () {
 					resizeImage(this);
