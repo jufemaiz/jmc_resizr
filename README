@@ -16,7 +16,7 @@ $('img').jmc_resizr(settings);
 Settings
 --------
 
-cropType : 'full' | 'height' | 'width' | 'fill_outer'
+cropType : 'full' | 'height' | 'width' | 'fill_outer' | 'fit'
 binding {
 	vertical : 'top', 'cener', 'bottom'
 	horizontal : 'left', 'center', 'right'

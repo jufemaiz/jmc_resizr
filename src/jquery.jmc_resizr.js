@@ -25,7 +25,7 @@
 			settings: $.extend({}, defaults, settings)
 		};
 
-		var resizeImage = function(el) {
+		var resizeNode = function(el) {
 			el = $(el);
 			ratio = el.height() / el.width();
 
@@ -38,6 +38,10 @@
 			var settings = $.extend({},opts.settings);
 			
 			switch(settings.cropType) {
+				case 'fit':
+					h = win_h;
+					w = win_w;
+					break;
 				case 'height':
 					h = win_h;
 					w = win_h / ratio;
@@ -102,7 +106,7 @@
 			if ($(el) == null) {
 				return;
 			}
-			resizeImage(el);
+			resizeNode(el);
         };
 
 	    return this.each(function() { 
@@ -110,7 +114,7 @@
 			if (this.nodeName === 'IMG') {
 				// Undertake check load state
 				$(this).load(function () {
-					resizeImage(this);
+					resizeNode(this);
 					var settings = $.extend({},opts.settings);
 			        if (settings.followBrowserSize) {
 						el = this;
@@ -122,7 +126,16 @@
 	            // notify the user that the asset could not be loaded
 					alert("Could not load!"+$(this).attr('src'));
 		        }).attr('src', $(this).attr('src'));
-	        }
+	        } else {
+				resizeNode(this);
+				var settings = $.extend({},opts.settings);
+		        if (settings.followBrowserSize) {
+					el = this;
+		            $(window).bind('resize', function() {
+						followBrowserResize(el);
+		            });
+		        }
+			}
 	    });
 	};
 })(jQuery);
