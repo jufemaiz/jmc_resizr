@@ -5,7 +5,7 @@ Copyright (c) 2010 Joel Courtney. Licensed under the MIT license.
 Overview
 --------
 
-A jQuery plugin that makes image resizing a breeze.
+A jQuery plugin that makes element resizing to a window a breeze.
 
 Usage
 -----
