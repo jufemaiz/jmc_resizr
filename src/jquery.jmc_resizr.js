@@ -95,7 +95,7 @@
 					l = (win_w - w)/2;
 					break;
 			}
-			el.css({'height':h, 'width':w, 'position': 'absolute', 'top': t, 'left': l, 'z-index':-1});					
+			el.css({'height':h, 'width':w, 'position': 'absolute', 'top': t, 'left': l});					
 		};
 
         var followBrowserResize = function(el) {
@@ -118,7 +118,6 @@
 							followBrowserResize(el);
 			            });
 			        }
-
 				}).error(function () {
 	            // notify the user that the asset could not be loaded
 					alert("Could not load!"+$(this).attr('src'));

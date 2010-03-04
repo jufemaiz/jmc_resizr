@@ -16,3 +16,14 @@ $('img').jmc_resizr(settings);
 Settings
 --------
 
+cropType : 'full' | 'height' | 'width' | 'fill_outer'
+binding {
+	vertical : 'top', 'cener', 'bottom'
+	horizontal : 'left', 'center', 'right'
+},
+followBrowserSize :  true | false
+
+TODO
+----
+- IE Support Check
+- Parent Element binding
