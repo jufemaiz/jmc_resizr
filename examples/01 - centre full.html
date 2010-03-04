@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>jmc_resizr - Example 1</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="../src/jquery.jmc_resizr.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#makeItBig').jmc_resizr({
+					cropType : 'fill_outer',
+					binding : {
+						vertical : 'center',
+						horizontal : 'center'
+					}
+				});
+			});	
+		</script>
+	</head>
+	<body>
+		<img src="http://localhost/~joel/git/jmc_pagery/projects/20090122-ArcticMonkeys/01.jpg" alt="an image to resize" id="makeItBig" />
+	</body>
+</html>

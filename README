@@ -1,0 +1,18 @@
+jmc_resizer jQuery Plugin v0.1.0
+-------------------------------
+Copyright (c) 2010 Joel Courtney. Licensed under the MIT license.
+ 
+Overview
+--------
+
+A jQuery plugin that makes image resizing a breeze.
+
+Usage
+-----
+
+// create the jmc_resizr instance (settings must be an object)
+$('img').jmc_resizr(settings);
+
+Settings
+--------
+
