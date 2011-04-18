@@ -31,9 +31,9 @@
 
 			var win_h = win.height(), win_w = win.width();
 			// TODO: Update with binding to a parent element
-			// if(defaults.parentElement != $('body')) {
-			// 	win_h = win.height(), win_w = win.width();
-			// }
+			if(defaults.parentElement != $('body')) {
+				win_h = defaults.parentElement.height(), win_w = defaults.parentElement.width();
+			}
 
 			var settings = $.extend({},opts.settings);
 			
