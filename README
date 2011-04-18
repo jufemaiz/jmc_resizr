@@ -11,19 +11,19 @@ Usage
 -----
 
 // create the jmc_resizr instance (settings must be an object)
-$('img').jmc_resizr(settings);
+	$('img').jmc_resizr(settings);
 
 Settings
 --------
 
-cropType : 'full' | 'height' | 'width' | 'fill_outer' | 'fit'
-binding {
-	vertical : 'top', 'cener', 'bottom'
-	horizontal : 'left', 'center', 'right'
-},
-followBrowserSize :  true | false
+	cropType : 'full' | 'height' | 'width' | 'fill_outer' | 'fit'    
+	binding {    
+		vertical : 'top', 'center', 'bottom'    
+		horizontal : 'left', 'center', 'right'    
+	},    
+	followBrowserSize :  true | false,    
+	parentElement :  $('#yourElement') — *Default is $('body')*
 
 TODO
 ----
 - IE Support Check
-- Parent Element binding
