@@ -31,7 +31,7 @@
 
 			var win_h = win.height(), win_w = win.width();
 			// TODO: Update with binding to a parent element
-			if(defaults.parentElement != $('body')) {
+			if(defaults.parentElement[0] !== $('body')[0]) {
 				win_h = defaults.parentElement.height(), win_w = defaults.parentElement.width();
 			}
 
