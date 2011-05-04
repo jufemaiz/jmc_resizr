@@ -117,9 +117,8 @@
 					resizeNode(this);
 					var settings = $.extend({},opts.settings);
 			        if (settings.followBrowserSize) {
-						el = this;
-			            $(window).bind('resize', function() {
-							followBrowserResize(el);
+			            $(window).bind('resize', {el:this}, function(event) {
+							followBrowserResize(event.data.el);
 			            });
 			        }
 				}).error(function () {
@@ -130,9 +129,8 @@
 				resizeNode(this);
 				var settings = $.extend({},opts.settings);
 		        if (settings.followBrowserSize) {
-					el = this;
-		            $(window).bind('resize', function() {
-						followBrowserResize(el);
+		            $(window).bind('resize', {el: this}, function(event) {
+						followBrowserResize(event.data.el);
 		            });
 		        }
 			}
