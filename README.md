@@ -27,3 +27,7 @@ parentElement :  $('#yourElement') — *Default is $('body')*
 ## TODO
 
 * IE Support Check
+
+## Mentions
+
+* https://www.sitepoint.com/10-jquery-extensions/
