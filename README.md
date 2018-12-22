@@ -1,6 +1,6 @@
 # jmc_resizer jQuery Plugin v0.1.0
 
-Copyright (c) 2010 Joel Courtney. Licensed under the MIT license.
+Copyright &copy; 2010 Joel Courtney. Licensed under the MIT license.
  
 ## Overview
 
